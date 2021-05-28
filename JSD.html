@@ -3,9 +3,92 @@
   <head>
     <meta charset="utf-8">
     <title>Iihihlk</title>
+    body, html { cursor: url(cursor.cur), auto }
+                a { cursor: url(cursor.cur), auto}
+                div { cursor: url(cursor.cur), auto}
+
+            
+                @keyframes jaehee {
+                    0% {
+                        left:100px;
+                    }
+                    100% {
+                        left:1500px;
+                    }
+                    }
+            #sek_banjuan{
+                position:absolute;
+                left:100px;
+                width:100px;
+                height:50px;
+                margin-left:-50px;
+                background-color:#000;
+                color:#fff;
+                animation-name: jaehee;
+                animation-duration:1s;
+                animation-duration: leaner;
+                animation-iteration-count:infinite;
+                animation-direction:alternate;
+                animation-fill-mode: forwards;
+                }
+    
+            body {
+                margin:0px;
+            }
+            h1 {
+                border-bottom: 5px solid blue;
+                padding : 20px;
+                margin:0px;
+                font-size:45px;
+                text-align: center;
+            }
+            #info {
+                display: grid;
+                grid-template-columns: 300px 1fr;
+            }
+            h2 {
+                margin-top:0px;
+                padding-top:5px;
+            }
+            #menu {
+                border-right: 5px solid blue;
+                width:300px;
+            }
+            #ing {
+                margin-left:20px;
+                margin-top:20px;
+            }
   </head>
   <body>
-    <div id="disqus_thread"></div>
+   
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+      <h1>오리너구리</h1>
+      <img src = "duckbilled.jpg">
+      <h1>손민준 무하마드 라멘</h1>
+      <iframe src="손민준.mp4" allow="autoplay" id="video" width="400" height="400"></iframe>
+     <input id="night_day" type="button" value="으아 내누우우우운" onclick="
+                 if(document.querySelector('#night_day').value === '으아 내누우우우운'){
+                   document.querySelector('body').style.backgroundColor = 'black';
+                   document.querySelector('body').style.color = 'white';
+                   document.querySelector('#night_day').value = '오 무섭다';
+                 } else {
+                   document.querySelector('body').style.backgroundColor = 'white';
+                   document.querySelector('body').style.color = 'black';
+                   document.querySelector('#night_day').value = '으아 내누우우우운';
+                 }
+                 ">
+                 <input id="sek_banjuan" type="button" value="Tlqkf" onclick="
+                 if(document.querySelector('#sek_banjuan').value === 'Tlqkf'){
+                   document.querySelector('body').style.backgroundColor = 'pink';
+                   document.querySelector('body').style.color = 'blue';
+                   document.querySelector('#sek_banjuan').value = 'ing';
+                 } else {
+                   document.querySelector('body').style.backgroundColor = 'green';
+                   document.querySelector('body').style.color = 'orange';
+                   document.querySelector('#sek_banjuan').value = 'Tlqkf';
+                 }
+                 ">
+     <div id="disqus_thread"></div>
 <script>
     /**
     *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
@@ -23,10 +106,5 @@
     (d.head || d.body).appendChild(s);
     })();
 </script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-      <h1>오리너구리</h1>
-      <img src = "duckbilled.jpg">
-      <h1>손민준 무하마드 라멘</h1>
-      <iframe src="손민준.mp4" allow="autoplay" id="video" width="400" height="400"></iframe>
   </body>
 </html>
